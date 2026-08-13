@@ -1,0 +1,31 @@
+name: 公開データ・判定表示への問い合わせ
+description: 出典、時点、計算方法、表示上の問題を個人情報なしで報告します。
+title: "[Data] "
+labels:
+  - data
+body:
+  - type: markdown
+    attributes:
+      value: |
+        個別物件の住所・家賃・通知内容は投稿しないでください。本サービスは法的な公正性や適正賃料を判定しません。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開情報の確認
+      options:
+        - label: 投稿内容に個人情報や個別案件を特定できる情報を含めていません。
+          required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 対象の表示・出典
+      description: データセット名、画面上の項目名、出典URLなどを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 問い合わせ内容
+    validations:
+      required: true
+

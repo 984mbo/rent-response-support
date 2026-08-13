@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: セキュリティ・プライバシー問題を非公開で報告
+    url: https://github.com/984mbo/rent-response-support/security/advisories/new
+    about: 脆弱性、第三者アクセス、個人情報漏えいの疑いは公開Issueに書かないでください。
+  - name: 賃貸借契約・家賃値上げの相談
+    url: https://www.shouhiseikatu.metro.tokyo.lg.jp/sodan/kinkyu/20260303.html
+    about: 個別の法律・契約相談は東京都の案内または消費者ホットライン188をご利用ください。
+

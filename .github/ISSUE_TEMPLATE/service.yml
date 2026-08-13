@@ -1,0 +1,52 @@
+name: サービスの不具合・操作方法
+description: 個人情報を含めず、公開アプリの不具合や操作方法を問い合わせます。
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        このIssueは公開されます。通知画像・PDF、氏名、住所、家賃、Cookie、案件ID、PDF/ZIP、個人情報を含むスクリーンショットを投稿しないでください。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開情報の確認
+      options:
+        - label: 投稿内容に個人情報、通知画像、案件ID、Cookie、PDF/ZIPを含めていません。
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 種別
+      options:
+        - 操作方法
+        - 画面表示
+        - OCR・ファイル処理
+        - PDF・ZIP
+        - 削除・再開
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 発生した操作と結果
+      description: 個人情報を除き、どの画面で何をしたか、期待した結果と実際の結果を記載してください。
+    validations:
+      required: true
+  - type: input
+    id: error-code
+    attributes:
+      label: 表示されたエラーコード
+      description: 表示されていない場合は「なし」と記載してください。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 利用環境
+      description: 例：iPhone Safari、Windows Chrome。バージョンや端末識別子は不要です。
+    validations:
+      required: true
+
